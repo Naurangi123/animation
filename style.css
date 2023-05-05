@@ -1,0 +1,78 @@
+body {
+  background-color: aquamarine;
+}
+.container-fluid {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  animation: slideFromBottom 5s ease-in-out 1;
+}
+.top-container {
+  position: relative;
+  margin-left: 50%;
+}
+
+.bottom-container {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: brown;
+  letter-spacing: 2px;
+  padding-left: 320px;
+  animation: slideFromTop 5s ease-in-out 1;
+}
+.all-container {
+  margin-bottom: 50%;
+  padding-left: 20rem;
+  animation: slideFromLeft 3s ease-in-out 1;
+}
+.bottom2-container {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 50px;
+  padding: 1rem 30px;
+  position: absolute;
+  padding-right: 10px;
+  left: 20%;
+  margin-bottom: 80px;
+}
+.bottom3-container {
+  top: 200px;
+  left: 50%;
+  padding: 5rem;
+  padding-left: 20rem;
+  margin-top: 20px;
+}
+
+/* Animation */
+
+@keyframes slideFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
